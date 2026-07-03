@@ -1,0 +1,37 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>BitMind · Validator analysis</title><style>
+:root{--ink:#111;--mut:#666;--line:#e2e2e2;--bg:#fff;--g:#1a7f37;--gb:#e6f4ea;--a:#9a6700;--ab:#fff8e1;--r:#b42318;--rb:#fdeceb;--acc:#111}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#f4f4f4;line-height:1.5;font-size:14px}
+.wrap{max-width:1080px;margin:0 auto;padding:32px 28px 64px;background:var(--bg);min-height:100vh}
+a{color:#0b5fff;text-decoration:none}a:hover{text-decoration:underline}
+.top{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--ink);padding-bottom:10px;margin-bottom:6px}
+.top h1{font-size:20px;margin:0;letter-spacing:-.2px}
+.eyebrow{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--mut);margin-bottom:24px}
+.lead{font-size:14px;color:#333;margin:14px 0 26px;max-width:760px}
+h2{font-size:15px;margin:34px 0 12px;padding-bottom:6px;border-bottom:1px solid var(--line);letter-spacing:.2px}
+h3{font-size:13px;margin:22px 0 8px;color:var(--mut);text-transform:uppercase;letter-spacing:1px}
+table{border-collapse:collapse;width:100%;font-size:12.5px;margin:6px 0 8px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--mut);font-weight:700;border-bottom:1.5px solid var(--ink)}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+tr:hover td{background:#fafafa}
+.pill{display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:700;white-space:nowrap}
+.g{background:var(--gb);color:var(--g)}.a{background:var(--ab);color:var(--a)}.r{background:var(--rb);color:var(--r)}.n{background:#f0f0f0;color:#555}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{border:1px solid var(--line);border-radius:8px;padding:12px 14px}
+.card .k{font-size:10.5px;text-transform:uppercase;letter-spacing:.5px;color:var(--mut)}
+.card .v{font-size:20px;font-weight:700;margin-top:3px;font-variant-numeric:tabular-nums}
+.card .s{font-size:11px;color:var(--mut);margin-top:2px}
+.q{border:1px solid var(--line);border-left:3px solid var(--acc);border-radius:6px;padding:14px 16px;margin:14px 0;background:#fcfcfc}
+.q .ql{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--mut);font-weight:700}
+.q .qq{font-weight:700;font-size:14px;margin:2px 0 8px}
+.q .qa{font-size:13.5px}
+.bar{height:22px;border-radius:4px;overflow:hidden;display:flex;border:1px solid var(--line);margin:8px 0}
+.bar .self{background:#111}.bar .nom{background:#c9c9c9}
+.barlbl{display:flex;justify-content:space-between;font-size:11px;color:var(--mut);margin-top:3px}
+.mono{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;color:#444;word-break:break-all}
+.foot{margin-top:40px;padding-top:12px;border-top:1px solid var(--line);font-size:11px;color:var(--mut)}
+.back{font-size:12px}
+.note{font-size:12px;color:var(--mut);background:#fafafa;border:1px solid var(--line);border-radius:6px;padding:10px 12px;margin:10px 0}
+ul.tight{margin:6px 0 6px 18px;padding:0}ul.tight li{margin:4px 0}
+</style></head><body><div class=wrap><div class=top><h1>BitMind</h1><div class=back><a href='index.html'>&larr; Summary</a></div></div><div class=eyebrow>Validator 8 of 9 · Bittensor · netuid 34</div><div class=lead>Deepfake detection. Website: <a href='https://bitmind.ai' target=_blank>bitmind.ai</a>. <a href='https://taostats.io/validators/5HjBSeeoz52CLfvDWDkzupqrYLHz1oToDPHjdmJjc4TF68LQ' target=_blank>taostats profile</a>.</div><div class=grid><div class=card><div class=k>Take / commission</div><div class=v>9.00%</div><div class=s>on nominator emissions</div></div><div class=card><div class=k>Owner self-stake</div><div class=v>2.8%</div><div class=s>405.4 of 14586 TAO</div></div><div class=card><div class=k>Nominators</div><div class=v>90</div><div class=s>86 staking coldkeys</div></div><div class=card><div class=k>Stake APR</div><div class=v>25.12%</div><div class=s>rank 28 · dom 89.43%</div></div></div><h2>Q1 · Purpose. Is it purely to validate their own chain?</h2><div class=q><div class=ql>Answer</div><div class=qq>Primary validator for the subnet, ownership unconfirmed.</div><div class=qa>Operates BitMind, a deepfake-detection subnet. (Deepfake detection.) It actively validates 1 subnet (netuid 34). No clean owner match. It runs as the subnet's primary validator but the validator coldkey does not equal the on-chain subnet-owner coldkey, so ownership could not be confirmed from stake data alone.</div></div><h2>Q2 · Owner stake vs nominator stake</h2><div class=bar><div class=self style='width:2.78%'></div><div class=nom style='width:97.22%'></div></div><div class=barlbl><span>Owner self-stake 2.78% (405.4 TAO)</span><span>Nominators 97.22% (14180 TAO)</span></div><div class=q><div class=ql>Answer</div><div class=qa>Total stake on the hotkey is 14586 TAO. Owner self-stake is 405.4 TAO (2.78%); nominators supply 14180 TAO (97.22%) across 86 coldkeys.</div></div><h2>Q3 · Staking fees and fees earned</h2><div class=q><div class=ql>Answer</div><div class=qq>9.00% take on nominator emissions.</div><div class=qa>Yes. Take (commission) is 9.00%, charged on nominator emissions. Commission run-rate is 1.758 TAO/day. Cumulative validator commission over the 504 days of available history is about 1029.3 TAO.</div></div><h3>On-chain detail</h3><table><tbody><tr><td style='color:#666;width:34%'>Hotkey</td><td><span class=mono>5HjBSeeoz52CLfvDWDkzupqrYLHz1oToDPHjdmJjc4TF68LQ</span></td></tr><tr><td style='color:#666;width:34%'>Owner coldkey</td><td><span class=mono>5DthmKBR83sUdudSfgFnsxBkTYtYTFLJUgovNfb1TSKVLiTH</span></td></tr><tr><td style='color:#666;width:34%'>Validates own subnet</td><td>No / unconfirmed</td></tr><tr><td style='color:#666;width:34%'>Active subnets</td><td>1</td></tr><tr><td style='color:#666;width:34%'>Total stake</td><td>14585.69 TAO</td></tr><tr><td style='color:#666;width:34%'>Owner self-stake</td><td>405.40 TAO (2.78%)</td></tr><tr><td style='color:#666;width:34%'>Nominator stake</td><td>14180.29 TAO across 86 coldkeys</td></tr><tr><td style='color:#666;width:34%'>Take (commission)</td><td>9.00%</td></tr><tr><td style='color:#666;width:34%'>Validator commission run-rate</td><td>1.7578 TAO/day</td></tr><tr><td style='color:#666;width:34%'>Nominator emission run-rate</td><td>17.7741 TAO/day</td></tr><tr><td style='color:#666;width:34%'>Cumulative validator commission</td><td>1029.33 TAO over 504 days</td></tr><tr><td style='color:#666;width:34%'>Stake APR (tao.com)</td><td>25.12%</td></tr></tbody></table><div class=foot>Data: taostats API (on-chain stake, take, rewards) and tao.com API (validator identity, APR, dominance). Snapshot 2026-07-03. Stake and rewards in TAO. </div></div></body></html>
